@@ -14,7 +14,7 @@ var app = express();
 app.use(helmet());
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://shukuru:mukhsini01@ds243441.mlab.com:43441/salome';
+var mongoDB ='mongodb://shukuru:mukhsini01@ds243441.mlab.com:43441/salome';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
